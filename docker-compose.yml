@@ -1,0 +1,7 @@
+version: '2'
+services:
+  service1:
+    volumes:
+      - ./:/my/folder
+    image: alpine
+    command: sh -c "echo hello > /my/folder/myfile.txt"
